@@ -13,7 +13,7 @@ export function signinUser({email, password}) {
 				browserHistory.push('/feature');
 			})
 			.catch(()=>{
-				
+				dispatch(authError('bad login info'));
 			});
 	}
 }
